@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: "Reach THE FAMILIES — stockists, press, collaborations and made-to-order enquiries.",
+  title: "Contacto",
+  description: "Escríbele a THE FAMILIES: puntos de venta, prensa, colaboraciones y pedidos a la medida.",
 };
 
 const CHANNELS = [
   { label: "General", value: "hello@thefamilies.studio", href: "mailto:hello@thefamilies.studio" },
-  { label: "Press", value: "press@thefamilies.studio", href: "mailto:press@thefamilies.studio" },
-  { label: "Stockists", value: "wholesale@thefamilies.studio", href: "mailto:wholesale@thefamilies.studio" },
+  { label: "Prensa", value: "press@thefamilies.studio", href: "mailto:press@thefamilies.studio" },
+  { label: "Puntos de venta", value: "wholesale@thefamilies.studio", href: "mailto:wholesale@thefamilies.studio" },
   { label: "Instagram", value: "@t.families", href: "https://www.instagram.com/t.families/" },
 ];
 
@@ -16,13 +16,13 @@ export default function ContactPage() {
   return (
     <div className="pt-28 md:pt-40">
       <section className="mx-auto max-w-[1600px] px-5 md:px-10">
-        <p className="kicker mb-6">Contact — Studio</p>
-        <h1 className="display text-[16vw] leading-[0.82] md:text-[10vw]">Get in touch</h1>
+        <p className="kicker mb-6">Contacto — Estudio</p>
+        <h1 className="display text-[16vw] leading-[0.82] md:text-[10vw]">Escríbenos</h1>
       </section>
 
       <section className="mx-auto grid max-w-[1600px] gap-16 px-5 py-20 md:grid-cols-2 md:gap-20 md:px-10 md:py-32">
         <div>
-          <p className="kicker mb-8">Direct</p>
+          <p className="kicker mb-8">Directo</p>
           <ul className="space-y-7">
             {CHANNELS.map((c) => (
               <li key={c.label} className="border-b border-line pb-5">
@@ -39,20 +39,20 @@ export default function ContactPage() {
             ))}
           </ul>
           <div className="mt-12">
-            <p className="text-[12px] uppercase tracking-[0.2em] text-ash">Studio</p>
+            <p className="text-[12px] uppercase tracking-[0.2em] text-ash">Estudio</p>
             <p className="mt-2 text-xl leading-relaxed md:text-2xl">
-              By appointment only.
+              Solo con cita previa.
               <br />
-              The grey room.
+              Bogotá — el cuarto gris.
             </p>
           </div>
         </div>
 
         <form className="flex flex-col gap-6">
-          <p className="kicker">Write to us</p>
+          <p className="kicker">Escríbenos</p>
           {[
-            { name: "name", label: "Name", type: "text" },
-            { name: "email", label: "Email", type: "email" },
+            { name: "name", label: "Nombre", type: "text" },
+            { name: "email", label: "Correo", type: "email" },
           ].map((f) => (
             <label key={f.name} className="block border-b border-line pb-2">
               <span className="block text-[11px] uppercase tracking-[0.2em] text-ash">{f.label}</span>
@@ -65,7 +65,7 @@ export default function ContactPage() {
             </label>
           ))}
           <label className="block border-b border-line pb-2">
-            <span className="block text-[11px] uppercase tracking-[0.2em] text-ash">Message</span>
+            <span className="block text-[11px] uppercase tracking-[0.2em] text-ash">Mensaje</span>
             <textarea
               name="message"
               rows={4}
@@ -77,7 +77,7 @@ export default function ContactPage() {
             type="submit"
             className="mt-2 self-start border border-ink px-10 py-4 text-[12px] uppercase tracking-[0.25em] transition-colors duration-500 hover:bg-ink hover:text-paper"
           >
-            Send
+            Enviar
           </button>
         </form>
       </section>

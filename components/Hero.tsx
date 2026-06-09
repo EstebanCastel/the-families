@@ -2,7 +2,6 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import Image from "next/image";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -36,21 +35,6 @@ export default function Hero() {
         style={{ opacity: fade }}
         className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center"
       >
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.6, ease: EASE }}
-        >
-          <Image
-            src="/logo/logo.png"
-            alt="The Families"
-            width={120}
-            height={120}
-            priority
-            className="mx-auto mb-8 h-16 w-16 md:h-24 md:w-24"
-          />
-        </motion.div>
-
         <h1 className="display text-[15vw] leading-[0.82] md:text-[11vw]">
           <span className="block overflow-hidden">
             <motion.span
@@ -70,7 +54,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 1 }}
           className="mt-6 max-w-md text-[13px] uppercase tracking-[0.28em] text-paper/70"
         >
-          A wardrobe assembled from memory
+          Un guardarropa hecho de memoria
         </motion.p>
       </motion.div>
 
@@ -83,7 +67,7 @@ export default function Hero() {
           transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
           className="block"
         >
-          Scroll — Enter the archive
+          Desliza — Entra al archivo
         </motion.span>
       </motion.div>
     </section>

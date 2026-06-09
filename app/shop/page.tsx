@@ -5,25 +5,25 @@ import { Reveal } from "@/components/Reveal";
 import { products } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Shop",
-  description: "Curated, hand-built editions from THE FAMILIES. Closer to an exhibition than a catalogue.",
+  title: "Tienda",
+  description: "Ediciones curadas y armadas a mano por THE FAMILIES. Más cerca de una exposición que de un catálogo.",
 };
 
-const CATEGORIES = ["All", "Outerwear", "Knitwear", "Trousers", "Accessories"];
+const CATEGORIES = ["Todo", "Abrigos", "Tejidos", "Pantalones", "Accesorios"];
 
 export default function ShopPage() {
   return (
     <div className="pt-28 md:pt-40">
       <header className="mx-auto max-w-[1600px] px-5 md:px-10">
-        <p className="kicker mb-6">The Shop — Edition pieces</p>
-        <h1 className="display text-[16vw] leading-[0.82] md:text-[10vw]">Wardrobe</h1>
+        <p className="kicker mb-6">La Tienda — Piezas de edición</p>
+        <h1 className="display text-[16vw] leading-[0.82] md:text-[10vw]">Guardarropa</h1>
         <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 border-b border-line pb-5 text-[12px] uppercase tracking-[0.18em] text-ash">
           {CATEGORIES.map((c, i) => (
             <span key={c} className={i === 0 ? "text-ink" : "transition-colors hover:text-ink"}>
               {c}
             </span>
           ))}
-          <span className="ml-auto hidden md:inline">{products.length} pieces · One year, three chapters</span>
+          <span className="ml-auto hidden md:inline">{products.length} piezas · Un año, tres capítulos</span>
         </div>
       </header>
 

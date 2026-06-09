@@ -3,21 +3,21 @@ import ArchiveGrid from "@/components/ArchiveGrid";
 import { looks } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Archive",
+  title: "Archivo",
   description:
-    "The full contact sheet — campaigns, collections and creative process from THE FAMILIES, presented as a family photo album.",
+    "La hoja de contactos completa: campañas, colecciones y proceso creativo de THE FAMILIES, presentados como un álbum de fotos familiar.",
 };
 
 export default function ArchivePage() {
   return (
     <div className="pt-28 md:pt-40">
       <header className="mx-auto max-w-[1600px] px-5 md:px-10">
-        <p className="kicker mb-6">The Archive — Contact sheet 001</p>
-        <h1 className="display text-[16vw] leading-[0.82] md:text-[10vw]">Archive</h1>
+        <p className="kicker mb-6">El Archivo — Hoja de contactos 001</p>
+        <h1 className="display text-[16vw] leading-[0.82] md:text-[10vw]">Archivo</h1>
         <p className="mt-8 max-w-xl leading-relaxed text-ink/75">
-          Forty-five frames from the first year. Campaigns, process and behind-the-scenes, kept the
-          way a family keeps photographs — unsorted, undated, and complete. Select any frame to
-          enlarge.
+          Cuarenta y cinco cuadros del primer año. Campañas, proceso y detrás de cámaras, guardados
+          como una familia guarda las fotos: sin orden, sin fecha y completos. Selecciona cualquier
+          cuadro para ampliarlo.
         </p>
       </header>
 

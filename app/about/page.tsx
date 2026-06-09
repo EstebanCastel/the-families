@@ -4,21 +4,21 @@ import { Reveal, RevealText } from "@/components/Reveal";
 import { looks } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "About",
-  description: "THE FAMILIES is a cultural project built on memory, identity and belonging.",
+  title: "Nosotros",
+  description: "THE FAMILIES es un proyecto cultural construido sobre la memoria, la identidad y la pertenencia.",
 };
 
-const PILLARS = ["Memory", "Identity", "Belonging", "Youth Culture", "Family", "Nostalgia"];
+const PILLARS = ["Memoria", "Identidad", "Pertenencia", "Cultura Juvenil", "Familia", "Nostalgia"];
 
 export default function AboutPage() {
   return (
     <div className="pt-28 md:pt-40">
       <section className="mx-auto max-w-[1600px] px-5 md:px-10">
-        <p className="kicker mb-10">About — A cultural project</p>
+        <p className="kicker mb-10">Nosotros — Un proyecto cultural</p>
         <h1 className="display max-w-[14ch] text-[11vw] leading-[0.86] md:text-[7vw]">
-          <RevealText text="We make relics," />
+          <RevealText text="Hacemos reliquias," />
           <span className="block text-ash-2">
-            <RevealText text="not garments." delay={0.12} />
+            <RevealText text="no prendas." delay={0.12} />
           </span>
         </h1>
       </section>
@@ -30,17 +30,17 @@ export default function AboutPage() {
         <div className="flex flex-col justify-center">
           <Reveal>
             <p className="text-xl leading-relaxed text-ink/85 md:text-2xl md:leading-relaxed">
-              The Families began with a box of photographs nobody wanted to throw away. A label, an
-              art exhibition, a youth movement and a forgotten photo album, all at once — built to
-              hold the people we are afraid of forgetting.
+              The Families empezó con una caja de fotografías que nadie quería botar. Una marca, una
+              exposición de arte, un movimiento juvenil y un álbum de fotos olvidado, todo a la vez,
+              hecho para sostener a las personas que tenemos miedo de olvidar.
             </p>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-8 leading-relaxed text-ink/70">
-              Every piece is salvaged, washed and rebuilt by hand against a single grey backdrop.
-              Faces are withheld. The clothing belongs to no one in particular, and therefore to
-              everyone who has ever inherited something they did not ask for. We release the work in
-              chapters, the way a family tells its story: out of order, and never finished.
+              Cada pieza es rescatada, lavada y reconstruida a mano sobre un solo fondo gris. Los
+              rostros se retienen. La ropa no pertenece a nadie en particular, y por eso a todos los
+              que alguna vez heredaron algo que no pidieron. Lanzamos el trabajo por capítulos, como
+              una familia cuenta su historia: sin orden, y nunca terminada.
             </p>
           </Reveal>
         </div>
@@ -48,7 +48,7 @@ export default function AboutPage() {
 
       <section className="bg-ink py-24 text-paper md:py-36">
         <div className="mx-auto max-w-[1600px] px-5 md:px-10">
-          <p className="kicker mb-12">The emotional pillars</p>
+          <p className="kicker mb-12">Los pilares emocionales</p>
           <ul className="grid grid-cols-2 gap-y-3 md:grid-cols-3">
             {PILLARS.map((p, i) => (
               <Reveal key={p} delay={i * 0.05}>
@@ -62,8 +62,8 @@ export default function AboutPage() {
       <section className="mx-auto max-w-3xl px-5 py-28 text-center md:py-40">
         <Reveal>
           <p className="display text-3xl leading-[1.1] md:text-5xl md:leading-[1.1]">
-            If Rick Owens, Aitor Throup and an independent art publication built a label around
-            memory and family — this is the album they would leave behind.
+            Si Rick Owens, Aitor Throup y una publicación de arte independiente construyeran una
+            marca en torno a la memoria y la familia, este sería el álbum que dejarían atrás.
           </p>
         </Reveal>
       </section>

@@ -7,11 +7,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
 const LINKS = [
-  { href: "/shop", label: "Shop" },
-  { href: "/archive", label: "Archive" },
-  { href: "/journal", label: "Journal" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
+  { href: "/shop", label: "Tienda" },
+  { href: "/archive", label: "Archivo" },
+  { href: "/journal", label: "Diario" },
+  { href: "/about", label: "Nosotros" },
+  { href: "/contact", label: "Contacto" },
 ];
 
 export default function Nav() {
@@ -31,12 +31,12 @@ export default function Nav() {
   return (
     <>
       <header
-        className={`fixed inset-x-0 top-0 z-50 transition-colors duration-700 ${
-          scrolled ? "bg-paper/85 backdrop-blur-md" : "bg-transparent"
+        className={`fixed inset-x-0 top-0 z-50 bg-blood text-white transition-shadow duration-500 ${
+          scrolled ? "shadow-[0_2px_20px_rgba(0,0,0,0.25)]" : ""
         }`}
       >
         <nav className="mx-auto flex h-16 max-w-[1600px] items-center justify-between px-5 md:h-20 md:px-10">
-          <Link href="/" className="flex items-center gap-3" aria-label="The Families — home">
+          <Link href="/" className="flex items-center gap-3" aria-label="The Families — inicio">
             <Image
               src="/logo/logo.png"
               alt="The Families"
@@ -63,9 +63,9 @@ export default function Nav() {
           <button
             onClick={() => setOpen((v) => !v)}
             className="flex items-center gap-2 text-[12px] font-medium uppercase tracking-[0.18em] md:hidden"
-            aria-label="Toggle menu"
+            aria-label="Abrir menú"
           >
-            {open ? "Close" : "Menu"}
+            {open ? "Cerrar" : "Menú"}
           </button>
         </nav>
       </header>
@@ -77,10 +77,10 @@ export default function Nav() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-40 flex flex-col justify-center bg-ink px-6 text-paper md:hidden"
+            className="fixed inset-0 z-40 flex flex-col justify-center bg-blood px-6 text-white md:hidden"
           >
             <ul className="space-y-3">
-              {[{ href: "/", label: "Home" }, ...LINKS].map((l, i) => (
+              {[{ href: "/", label: "Inicio" }, ...LINKS].map((l, i) => (
                 <motion.li
                   key={l.href}
                   initial={{ y: 40, opacity: 0 }}

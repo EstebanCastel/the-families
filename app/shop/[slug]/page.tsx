@@ -41,7 +41,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <div key={src} className="relative aspect-[4/5] w-full overflow-hidden bg-ash-2/20">
               <Image
                 src={src}
-                alt={`${product.title} — view ${i + 1}`}
+                alt={`${product.title} — vista ${i + 1}`}
                 fill
                 priority={i === 0}
                 sizes="(max-width:768px) 100vw, 50vw"
@@ -61,17 +61,17 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <p className="mt-8 max-w-md leading-relaxed text-ink/80">{product.story}</p>
 
             <button className="mt-9 w-full max-w-md border border-ink py-4 text-[12px] uppercase tracking-[0.25em] transition-colors duration-500 hover:bg-ink hover:text-paper">
-              Add to wardrobe
+              Añadir al guardarropa
             </button>
             <p className="mt-3 max-w-md text-center text-[11px] uppercase tracking-[0.18em] text-ash">
-              Made to order — handcrafted in 4 to 6 weeks
+              Hecho a pedido — elaborado a mano en 4 a 6 semanas
             </p>
 
             <div className="mt-12 max-w-md">
               <Accordion
                 items={[
                   {
-                    title: "Materials & Construction",
+                    title: "Materiales y Construcción",
                     body: (
                       <ul className="space-y-1.5">
                         {product.materials.map((m) => (
@@ -80,24 +80,24 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                       </ul>
                     ),
                   },
-                  { title: "Garment Philosophy", body: <p>{product.philosophy}</p> },
+                  { title: "Filosofía de la Prenda", body: <p>{product.philosophy}</p> },
                   {
-                    title: "Sizing",
+                    title: "Tallas",
                     body: (
                       <p>
-                        Cut oversized and unisex. The Families is built to be grown into, not fitted
-                        to. If between sizes, size down for structure or up for volume. Made-to-order
-                        measurements available on request.
+                        Corte oversize y unisex. The Families está hecho para crecer dentro de él, no
+                        para ceñirse al cuerpo. Si estás entre tallas, baja una para estructura o sube
+                        una para volumen. Medidas a pedido disponibles bajo solicitud.
                       </p>
                     ),
                   },
                   {
-                    title: "Shipping & Care",
+                    title: "Envío y Cuidado",
                     body: (
                       <p>
-                        Worldwide shipping, fully insured, 5–8 working days once made. Each piece
-                        ships with its archive card and origin notes. Hand wash cold, dry flat, wear
-                        often.
+                        Envíos a toda Colombia, asegurados, 3 a 6 días hábiles una vez elaborado.
+                        Envíos internacionales bajo cotización. Cada pieza llega con su ficha de
+                        archivo y notas de origen. Lavar a mano en frío, secar en plano, usar seguido.
                       </p>
                     ),
                   },
@@ -111,7 +111,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       {/* Story band */}
       <section className="bg-ink px-5 py-28 text-paper md:px-10 md:py-40">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="kicker mb-8">The Philosophy</p>
+          <p className="kicker mb-8">La Filosofía</p>
           <Reveal>
             <p className="display text-3xl leading-[1.05] md:text-5xl md:leading-[1.05]">
               {product.philosophy}
@@ -122,7 +122,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
       {/* Related */}
       <section className="mx-auto max-w-[1600px] px-5 py-24 md:px-10">
-        <h2 className="display mb-12 text-4xl md:text-6xl">Related pieces</h2>
+        <h2 className="display mb-12 text-4xl md:text-6xl">Piezas relacionadas</h2>
         <div className="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-3">
           {related.map((p) => (
             <Link key={p.slug} href={`/shop/${p.slug}`} className="group block">

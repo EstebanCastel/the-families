@@ -58,7 +58,7 @@ export default async function JournalEntryPage({
 
       <nav className="mx-auto max-w-[1600px] border-t border-line px-5 py-14 md:px-10">
         <Link href={`/journal/${nextEntry.slug}`} className="group block">
-          <p className="kicker mb-3">Next in the journal</p>
+          <p className="kicker mb-3">Siguiente en el diario</p>
           <span className="display text-4xl leading-[0.95] transition-colors group-hover:text-ash md:text-7xl">
             {nextEntry.title} →
           </span>

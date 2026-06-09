@@ -5,8 +5,8 @@ import { Reveal } from "@/components/Reveal";
 import { journal } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Journal",
-  description: "Essays, process notes and cultural references — an independent publication by THE FAMILIES.",
+  title: "Diario",
+  description: "Ensayos, notas de proceso y referencias culturales: una publicación independiente de THE FAMILIES.",
 };
 
 export default function JournalPage() {
@@ -14,8 +14,8 @@ export default function JournalPage() {
   return (
     <div className="pt-28 md:pt-40">
       <header className="mx-auto max-w-[1600px] px-5 md:px-10">
-        <p className="kicker mb-6">The Journal — An independent publication</p>
-        <h1 className="display text-[16vw] leading-[0.82] md:text-[10vw]">Journal</h1>
+        <p className="kicker mb-6">El Diario — Una publicación independiente</p>
+        <h1 className="display text-[16vw] leading-[0.82] md:text-[10vw]">Diario</h1>
       </header>
 
       {/* Lead */}
@@ -36,7 +36,7 @@ export default function JournalPage() {
             <h2 className="display text-5xl leading-[0.92] md:text-7xl">{lead.title}</h2>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-ink/75">{lead.dek}</p>
             <span className="mt-8 inline-block link-underline text-sm uppercase tracking-[0.2em]">
-              Read the essay →
+              Leer el ensayo →
             </span>
           </div>
         </Link>

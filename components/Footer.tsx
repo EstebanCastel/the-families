@@ -11,32 +11,32 @@ export default function Footer() {
 
       <div className="mx-auto grid max-w-[1600px] gap-12 px-5 py-16 md:grid-cols-[1.4fr_1fr_1fr] md:px-10 md:py-24">
         <div>
-          <h3 className="display text-4xl md:text-6xl">The newsletter</h3>
+          <h3 className="display text-4xl md:text-6xl">El boletín</h3>
           <p className="mt-5 max-w-md text-sm leading-relaxed text-ash-2">
-            One letter, each chapter. No noise. Only the archive as it opens.
+            Una carta por cada capítulo. Sin ruido. Solo el archivo a medida que se abre.
           </p>
           <form className="mt-7 flex max-w-md items-center border-b border-white/25 pb-2">
             <input
               type="email"
               required
-              placeholder="Your email"
+              placeholder="Tu correo"
               className="w-full bg-transparent text-sm outline-none placeholder:text-ash"
             />
             <button type="submit" className="text-[12px] uppercase tracking-[0.2em] link-underline">
-              Join
+              Unirse
             </button>
           </form>
         </div>
 
         <nav className="text-sm">
-          <p className="kicker mb-5 text-ash">Index</p>
+          <p className="kicker mb-5 text-ash">Índice</p>
           <ul className="space-y-2.5">
             {[
-              { href: "/shop", label: "Shop" },
-              { href: "/archive", label: "Archive" },
-              { href: "/journal", label: "Journal" },
-              { href: "/about", label: "About" },
-              { href: "/contact", label: "Contact" },
+              { href: "/shop", label: "Tienda" },
+              { href: "/archive", label: "Archivo" },
+              { href: "/journal", label: "Diario" },
+              { href: "/about", label: "Nosotros" },
+              { href: "/contact", label: "Contacto" },
             ].map((l) => (
               <li key={l.href}>
                 <Link href={l.href} className="link-underline text-ash-2">
@@ -48,7 +48,7 @@ export default function Footer() {
         </nav>
 
         <nav className="text-sm">
-          <p className="kicker mb-5 text-ash">Elsewhere</p>
+          <p className="kicker mb-5 text-ash">En otros lugares</p>
           <ul className="space-y-2.5 text-ash-2">
             <li>
               <a
@@ -62,7 +62,7 @@ export default function Footer() {
             </li>
             <li>
               <a href="mailto:hello@thefamilies.studio" className="link-underline">
-                Email
+                Correo
               </a>
             </li>
           </ul>
@@ -70,8 +70,8 @@ export default function Footer() {
       </div>
 
       <div className="mx-auto flex max-w-[1600px] flex-col gap-2 border-t border-white/10 px-5 py-6 text-[11px] uppercase tracking-[0.2em] text-ash md:flex-row md:items-center md:justify-between md:px-10">
-        <span>© {year} The Families — A Family Archive</span>
-        <span>Memory · Identity · Belonging</span>
+        <span>© {year} The Families — Un Archivo Familiar</span>
+        <span>Memoria · Identidad · Pertenencia</span>
       </div>
     </footer>
   );

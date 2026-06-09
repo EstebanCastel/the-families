@@ -91,7 +91,7 @@ export default function ArchiveGrid({ looks }: { looks: Look[] }) {
                 className="object-contain"
               />
               <span className="absolute -bottom-7 left-0 font-mono text-[11px] tracking-widest text-paper/70">
-                {looks[active].id} · The Families Archive
+                {looks[active].id} · Archivo The Families
               </span>
             </motion.div>
           </motion.div>
